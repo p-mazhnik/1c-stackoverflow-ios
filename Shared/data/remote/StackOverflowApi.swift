@@ -10,29 +10,28 @@ import Combine
 
 struct APIClient {
 
-    struct Response<T> { // 1
+    struct Response<T> {
         let value: T
         let response: URLResponse
     }
     
     func run<T: Decodable>(_ request: URLRequest) -> AnyPublisher<Response<T>, Error> {
         return URLSession.shared
-            .dataTaskPublisher(for: request) // 3
+            .dataTaskPublisher(for: request)
             .tryMap { result -> Response<T> in
 //                let string1 = String(data: result.data, encoding: String.Encoding.utf8) ?? "Data could not be printed"
 //                print(string1)
                 let value = try JSONDecoder().decode(T.self, from: result.data)
                 
-                return Response(value: value, response: result.response) // 5
+                return Response(value: value, response: result.response)
             }
-            .receive(on: DispatchQueue.main) // 6
-            .eraseToAnyPublisher() // 7
+            .receive(on: DispatchQueue.main)
+            .eraseToAnyPublisher()
     }
 }
 
 enum APIPath: String {
     case questions = "questions?page=1&pagesize=100&order=asc&sort=creation&tagged=Android&site=stackoverflow&filter=withbody"
-    case answers = "/questions/{questionId}/answers?order=desc&sort=votes&site=stackoverflow&filter=withbody"
 }
 
 enum StackOverflowAPI {
@@ -45,9 +44,21 @@ enum StackOverflowAPI {
             
         let request = URLRequest(url: components.url!)
         
-        return apiClient.run(request) // 5
-            .map(\.value) // 6
-            .eraseToAnyPublisher() // 7
+        return apiClient.run(request)
+            .map(\.value)
+            .eraseToAnyPublisher()
+    }
+    
+    static func requestAnswers(questionId: Int) -> AnyPublisher<ListResponse<Answer>, Error> {
+        let path = "questions/\(questionId)/answers?order=desc&sort=votes&site=stackoverflow&filter=withbody"
+        guard let components = URLComponents(url: URL(string: baseUrl + path)!, resolvingAgainstBaseURL: true)
+        else { fatalError("Couldn't create URLComponents") }
+            
+        let request = URLRequest(url: components.url!)
+        
+        return apiClient.run(request)
+            .map(\.value)
+            .eraseToAnyPublisher()
     }
 }
 

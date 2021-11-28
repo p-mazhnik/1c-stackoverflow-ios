@@ -7,12 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32757011274B0481708113A8 /* HTMLStringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32757530C095EE1852F8BAAF /* HTMLStringView.swift */; };
+		327577C2AA676B21B1E1F651 /* AnswerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32757378012C3CFA807D3066 /* AnswerListViewModel.swift */; };
+		32757AB15E8284B3BDF69020 /* AnswerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32757378012C3CFA807D3066 /* AnswerListViewModel.swift */; };
+		32757E448897374667190192 /* HTMLStringView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32757530C095EE1852F8BAAF /* HTMLStringView.swift */; };
 		A9E325052753C16B00F0BC6B /* StackOverflowApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E325042753C16B00F0BC6B /* StackOverflowApi.swift */; };
 		A9E325062753C16B00F0BC6B /* StackOverflowApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E325042753C16B00F0BC6B /* StackOverflowApi.swift */; };
 		A9E325082753C32600F0BC6B /* ListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E325072753C32600F0BC6B /* ListResponse.swift */; };
 		A9E325092753C32600F0BC6B /* ListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E325072753C32600F0BC6B /* ListResponse.swift */; };
 		A9E3250B2753CE0900F0BC6B /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E3250A2753CE0900F0BC6B /* Owner.swift */; };
 		A9E3250C2753CE0900F0BC6B /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E3250A2753CE0900F0BC6B /* Owner.swift */; };
+		A9E3250E2753D2F800F0BC6B /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E3250D2753D2F800F0BC6B /* Answer.swift */; };
+		A9E3250F2753D2F800F0BC6B /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E3250D2753D2F800F0BC6B /* Answer.swift */; };
+		A9E325112753D49600F0BC6B /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E325102753D49600F0BC6B /* QuestionView.swift */; };
+		A9E325122753D49600F0BC6B /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E325102753D49600F0BC6B /* QuestionView.swift */; };
 		A9F0FEA02752DE74005C5989 /* swift_course_21App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F0FE902752DE72005C5989 /* swift_course_21App.swift */; };
 		A9F0FEA12752DE74005C5989 /* swift_course_21App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F0FE902752DE72005C5989 /* swift_course_21App.swift */; };
 		A9F0FEA22752DE74005C5989 /* SOListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F0FE912752DE72005C5989 /* SOListView.swift */; };
@@ -26,9 +34,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32757378012C3CFA807D3066 /* AnswerListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnswerListViewModel.swift; sourceTree = "<group>"; };
+		32757530C095EE1852F8BAAF /* HTMLStringView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTMLStringView.swift; sourceTree = "<group>"; };
 		A9E325042753C16B00F0BC6B /* StackOverflowApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowApi.swift; sourceTree = "<group>"; };
 		A9E325072753C32600F0BC6B /* ListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResponse.swift; sourceTree = "<group>"; };
 		A9E3250A2753CE0900F0BC6B /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
+		A9E3250D2753D2F800F0BC6B /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		A9E325102753D49600F0BC6B /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		A9F0FE902752DE72005C5989 /* swift_course_21App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_course_21App.swift; sourceTree = "<group>"; };
 		A9F0FE912752DE72005C5989 /* SOListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOListView.swift; sourceTree = "<group>"; };
 		A9F0FE922752DE74005C5989 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +129,9 @@
 			children = (
 				A9F0FE912752DE72005C5989 /* SOListView.swift */,
 				A9F0FEAE2752E049005C5989 /* SOListViewModel.swift */,
+				A9E325102753D49600F0BC6B /* QuestionView.swift */,
+				32757530C095EE1852F8BAAF /* HTMLStringView.swift */,
+				32757378012C3CFA807D3066 /* AnswerListViewModel.swift */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -126,6 +141,7 @@
 			children = (
 				A9F0FEB42753BF64005C5989 /* Question.swift */,
 				A9E3250A2753CE0900F0BC6B /* Owner.swift */,
+				A9E3250D2753D2F800F0BC6B /* Answer.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -235,6 +251,10 @@
 				A9F0FEB52753BF64005C5989 /* Question.swift in Sources */,
 				A9F0FEA22752DE74005C5989 /* SOListView.swift in Sources */,
 				A9F0FEA02752DE74005C5989 /* swift_course_21App.swift in Sources */,
+				A9E325112753D49600F0BC6B /* QuestionView.swift in Sources */,
+				A9E3250E2753D2F800F0BC6B /* Answer.swift in Sources */,
+				32757011274B0481708113A8 /* HTMLStringView.swift in Sources */,
+				32757AB15E8284B3BDF69020 /* AnswerListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +269,10 @@
 				A9F0FEB62753BF64005C5989 /* Question.swift in Sources */,
 				A9F0FEA32752DE74005C5989 /* SOListView.swift in Sources */,
 				A9F0FEA12752DE74005C5989 /* swift_course_21App.swift in Sources */,
+				A9E325122753D49600F0BC6B /* QuestionView.swift in Sources */,
+				A9E3250F2753D2F800F0BC6B /* Answer.swift in Sources */,
+				32757E448897374667190192 /* HTMLStringView.swift in Sources */,
+				327577C2AA676B21B1E1F651 /* AnswerListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

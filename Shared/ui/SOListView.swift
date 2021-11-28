@@ -12,17 +12,24 @@ struct SOListView: View {
     @ObservedObject var viewModel = SOListViewModel()
     
     var body: some View {
-        List(viewModel.questions) {
-            question in
-            HStack {
-                VStack(alignment: .leading) {
-                    Text(question.title)
-                        .font(.headline)
-                    Text(String(question.score))
-                        .font(.subheadline)
+        NavigationView {
+            List(viewModel.questions) {
+                question in
+                HStack {
+                    NavigationLink(destination: QuestionView(question: question)) {
+                            VStack(alignment: .leading) {
+                                Text(question.title)
+                                    .font(.headline)
+                                Text("Score: \(question.score)")
+                                    .font(.subheadline)
+                                Text("Author: \(question.owner.displayName)")
+                                    .font(.subheadline)
+                            }
+                        }
                 }
             }
         }
+        .navigationTitle("iOS Stackoverflow")
     }
 }
 
