@@ -7,21 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9E325052753C16B00F0BC6B /* StackOverflowApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E325042753C16B00F0BC6B /* StackOverflowApi.swift */; };
+		A9E325062753C16B00F0BC6B /* StackOverflowApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E325042753C16B00F0BC6B /* StackOverflowApi.swift */; };
+		A9E325082753C32600F0BC6B /* ListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E325072753C32600F0BC6B /* ListResponse.swift */; };
+		A9E325092753C32600F0BC6B /* ListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E325072753C32600F0BC6B /* ListResponse.swift */; };
+		A9E3250B2753CE0900F0BC6B /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E3250A2753CE0900F0BC6B /* Owner.swift */; };
+		A9E3250C2753CE0900F0BC6B /* Owner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9E3250A2753CE0900F0BC6B /* Owner.swift */; };
 		A9F0FEA02752DE74005C5989 /* swift_course_21App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F0FE902752DE72005C5989 /* swift_course_21App.swift */; };
 		A9F0FEA12752DE74005C5989 /* swift_course_21App.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F0FE902752DE72005C5989 /* swift_course_21App.swift */; };
-		A9F0FEA22752DE74005C5989 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F0FE912752DE72005C5989 /* ContentView.swift */; };
-		A9F0FEA32752DE74005C5989 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F0FE912752DE72005C5989 /* ContentView.swift */; };
+		A9F0FEA22752DE74005C5989 /* SOListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F0FE912752DE72005C5989 /* SOListView.swift */; };
+		A9F0FEA32752DE74005C5989 /* SOListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F0FE912752DE72005C5989 /* SOListView.swift */; };
 		A9F0FEA42752DE74005C5989 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9F0FE922752DE74005C5989 /* Assets.xcassets */; };
 		A9F0FEA52752DE74005C5989 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9F0FE922752DE74005C5989 /* Assets.xcassets */; };
+		A9F0FEAF2752E049005C5989 /* SOListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F0FEAE2752E049005C5989 /* SOListViewModel.swift */; };
+		A9F0FEB02752E049005C5989 /* SOListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F0FEAE2752E049005C5989 /* SOListViewModel.swift */; };
+		A9F0FEB52753BF64005C5989 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F0FEB42753BF64005C5989 /* Question.swift */; };
+		A9F0FEB62753BF64005C5989 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9F0FEB42753BF64005C5989 /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A9E325042753C16B00F0BC6B /* StackOverflowApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowApi.swift; sourceTree = "<group>"; };
+		A9E325072753C32600F0BC6B /* ListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResponse.swift; sourceTree = "<group>"; };
+		A9E3250A2753CE0900F0BC6B /* Owner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Owner.swift; sourceTree = "<group>"; };
 		A9F0FE902752DE72005C5989 /* swift_course_21App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_course_21App.swift; sourceTree = "<group>"; };
-		A9F0FE912752DE72005C5989 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A9F0FE912752DE72005C5989 /* SOListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOListView.swift; sourceTree = "<group>"; };
 		A9F0FE922752DE74005C5989 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9F0FE972752DE74005C5989 /* swift-course-21.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-course-21.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F0FE9D2752DE74005C5989 /* swift-course-21.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-course-21.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9F0FE9F2752DE74005C5989 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		A9F0FEAE2752E049005C5989 /* SOListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOListViewModel.swift; sourceTree = "<group>"; };
+		A9F0FEB42753BF64005C5989 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +57,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9E325032753C14900F0BC6B /* remote */ = {
+			isa = PBXGroup;
+			children = (
+				A9E325042753C16B00F0BC6B /* StackOverflowApi.swift */,
+				A9E325072753C32600F0BC6B /* ListResponse.swift */,
+			);
+			path = remote;
+			sourceTree = "<group>";
+		};
 		A9F0FE8A2752DE72005C5989 = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +78,9 @@
 		A9F0FE8F2752DE72005C5989 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				A9F0FEB22753BD9F005C5989 /* ui */,
+				A9F0FEB12753BD92005C5989 /* data */,
 				A9F0FE902752DE72005C5989 /* swift_course_21App.swift */,
-				A9F0FE912752DE72005C5989 /* ContentView.swift */,
 				A9F0FE922752DE74005C5989 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -76,6 +101,33 @@
 				A9F0FE9F2752DE74005C5989 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		A9F0FEB12753BD92005C5989 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				A9E325032753C14900F0BC6B /* remote */,
+				A9F0FEB32753BF4F005C5989 /* model */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		A9F0FEB22753BD9F005C5989 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				A9F0FE912752DE72005C5989 /* SOListView.swift */,
+				A9F0FEAE2752E049005C5989 /* SOListViewModel.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		A9F0FEB32753BF4F005C5989 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A9F0FEB42753BF64005C5989 /* Question.swift */,
+				A9E3250A2753CE0900F0BC6B /* Owner.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +228,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9F0FEA22752DE74005C5989 /* ContentView.swift in Sources */,
+				A9E325082753C32600F0BC6B /* ListResponse.swift in Sources */,
+				A9F0FEAF2752E049005C5989 /* SOListViewModel.swift in Sources */,
+				A9E3250B2753CE0900F0BC6B /* Owner.swift in Sources */,
+				A9E325052753C16B00F0BC6B /* StackOverflowApi.swift in Sources */,
+				A9F0FEB52753BF64005C5989 /* Question.swift in Sources */,
+				A9F0FEA22752DE74005C5989 /* SOListView.swift in Sources */,
 				A9F0FEA02752DE74005C5989 /* swift_course_21App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,7 +242,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9F0FEA32752DE74005C5989 /* ContentView.swift in Sources */,
+				A9E325092753C32600F0BC6B /* ListResponse.swift in Sources */,
+				A9F0FEB02752E049005C5989 /* SOListViewModel.swift in Sources */,
+				A9E3250C2753CE0900F0BC6B /* Owner.swift in Sources */,
+				A9E325062753C16B00F0BC6B /* StackOverflowApi.swift in Sources */,
+				A9F0FEB62753BF64005C5989 /* Question.swift in Sources */,
+				A9F0FEA32752DE74005C5989 /* SOListView.swift in Sources */,
 				A9F0FEA12752DE74005C5989 /* swift_course_21App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

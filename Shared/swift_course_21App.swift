@@ -2,7 +2,7 @@
 //  swift_course_21App.swift
 //  Shared
 //
-//  Created by Pavel Mazhnik on 28.11.2021.
+//  Created by Pavel Mazhnik on 20.11.2021.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct swift_course_21App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SOListView()
         }
     }
 }
