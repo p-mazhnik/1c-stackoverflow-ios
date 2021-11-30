@@ -13,7 +13,6 @@ class AnswerListViewModel: ObservableObject {
 
     init(questionId: Int) {
         self.questionId = questionId
-        getAnswers()
     }
 
     func getAnswers() {

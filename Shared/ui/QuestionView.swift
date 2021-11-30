@@ -22,7 +22,7 @@ struct QuestionView: View {
                 VStack {
                     Text(question.title)
                             .font(.headline)
-                    // HTMLStringView(htmlContent: question.body)
+                    HTMLStringView(htmlContent: question.body).frame(height: g.size.height / 2)
                     Text("Score: \(question.score)")
                         .frame(maxWidth: .infinity, alignment: .trailing)
                         .padding(6)
@@ -35,12 +35,14 @@ struct QuestionView: View {
                             VStack(alignment: .leading) {
                                 Text("Score: \(answer.score)")
                                         .font(.subheadline)
+                                HTMLStringView(htmlContent: answer.body).frame(height: g.size.height / 4)
                             }
                         }.padding(.horizontal, 8)
                     }
                 }
             }
         }
+        .onAppear(perform: viewModel.getAnswers)
     }
 }
 
