@@ -12,5 +12,5 @@ The requirements were as follows:
 
 <hr/>
 
-[Android version](https://github.com/p-mazhnik/1c-android-20)
-[Flutter version](https://github.com/p-mazhnik/1c-android-20-flutter)
+- [Android version](https://github.com/p-mazhnik/1c-android-20)  
+- [Flutter version](https://github.com/p-mazhnik/1c-android-20-flutter)
