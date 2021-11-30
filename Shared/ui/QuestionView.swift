@@ -13,7 +13,7 @@ struct QuestionView: View {
 
     init(question: Question) {
         self.question = question
-        viewModel = AnswerListViewModel(questionId: question.questionId)
+        viewModel = AnswerListViewModel(questionId: question.id)
     }
     
     var body: some View {
@@ -22,11 +22,11 @@ struct QuestionView: View {
                 VStack {
                     Text(question.title)
                             .font(.headline)
-                    HTMLStringView(htmlContent: question.body).frame(height: g.size.height / 2)
-                    Text("Score: \(question.score)")
+                    HTMLStringView(htmlContent: question.body ?? "").frame(height: g.size.height / 2)
+                    Text("Score: \(question.score ?? 0)")
                         .frame(maxWidth: .infinity, alignment: .trailing)
                         .padding(6)
-                    Text("Author: \(question.owner.displayName)")
+                    Text("Author: \(question.owner?.displayName ?? "")")
                         .frame(maxWidth: .infinity, alignment: .trailing)
                         .padding(6)
                     ForEach(viewModel.answers) {

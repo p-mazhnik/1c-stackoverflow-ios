@@ -38,7 +38,7 @@ enum StackOverflowAPI {
     static let apiClient = APIClient()
     static let baseUrl = "https://api.stackexchange.com/2.2/"
     
-    static func request<T: Codable>(_ path: APIPath) -> AnyPublisher<ListResponse<T>, Error> {
+    static func request(_ path: APIPath) -> AnyPublisher<ListResponse<Question>, Error> {
         guard let components = URLComponents(url: URL(string: baseUrl + path.rawValue)!, resolvingAgainstBaseURL: true)
         else { fatalError("Couldn't create URLComponents") }
             

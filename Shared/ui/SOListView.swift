@@ -20,9 +20,9 @@ struct SOListView: View {
                             VStack(alignment: .leading) {
                                 Text(question.title)
                                     .font(.headline)
-                                Text("Score: \(question.score)")
+                                Text("Score: \(question.score ?? 0)")
                                     .font(.subheadline)
-                                Text("Author: \(question.owner.displayName)")
+                                Text("Author: \(question.owner?.displayName ?? "")")
                                     .font(.subheadline)
                             }
                         }

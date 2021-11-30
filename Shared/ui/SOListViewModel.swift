@@ -20,13 +20,32 @@ class SOListViewModel: ObservableObject {
     func getQuestions() {
         cancellationToken = StackOverflowAPI.request(.questions)
             .mapError({ (error) -> Error in
+                self.questions = self.getQuestionsDB()
                 print(error)
                 return error
             })
             .sink(receiveCompletion: { _ in },
-                  receiveValue: {
-                    self.questions = $0.items
+                  receiveValue: { value in
+                    self.questions = value.items
+                    self.saveQuestionsDB()
             })
+    }
+    
+    func getQuestionsDB() -> [Question] {
+        return CoreDataManager.shared.getQuestions().map{ questionMO in
+            print(questionMO)
+            return Question(managedObject: questionMO)
+        }
+    }
+    
+    func saveQuestionsDB() {
+        self.questions.forEach{
+            question in
+            let questionMO = QuestionMO(context: CoreDataManager.shared.viewContext)
+            questionMO.title = question.title
+            questionMO.id = String(question.id)
+        }
+        CoreDataManager.shared.save()
     }
 }
 
