@@ -1,4 +1,4 @@
-# Flutter StackOverflow Showcase
+# iOS StackOverflow Showcase
 
 This is an iOS version of
 [1c-android-20](https://github.com/p-mazhnik/1c-android-20) repository.
@@ -10,3 +10,7 @@ The requirements were as follows:
 * If the Internet is turned off, then show the questions saved in the database.
 * By clicking on the question, a second screen with the answers opens.
 
+<hr/>
+
+[Android version](https://github.com/p-mazhnik/1c-android-20)
+[Flutter version](https://github.com/p-mazhnik/1c-android-20-flutter)
